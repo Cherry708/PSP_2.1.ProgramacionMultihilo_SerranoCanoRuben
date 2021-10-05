@@ -31,6 +31,8 @@ class Hebra extends Thread{
         this.idHebra = idHebra;
     }
     public void run(){
-        System.out.println("Hola, soy la hebra: "+idHebra);
+        for (int i = 0; i < 10; i++){
+            System.out.println("Hola, soy la hebra: "+idHebra);
+        }
     }
 }
