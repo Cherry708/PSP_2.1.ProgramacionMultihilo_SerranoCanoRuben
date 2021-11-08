@@ -6,6 +6,7 @@ public class CreandoHebrasRunnable {
         Thread t1 = new Thread(new Tarea1());
         Thread t2 = new Thread(new Tarea2());
 
+        //Tarea2 t2 = new Tarea2(); No funciona porque Tarea1 y 2 implementan pero NO son threads
         t1.start(); //ojo no pongo t1.run
         t2.start();
 
